@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+    
+</head>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Pharmacity</h1>
+    <p>At pharmacity we offer various services including vaccinations, diabetes consulation. To get to know more visit our nearest pharmacy.</p>
+</div>
+
+<body style="background-color: #FCF3CF">
+    <div>
+        <img src="images/Pharmacy.jpg" alt="Image" style="width:100%;height:600px;" />
+    </div>
+    <br />
+    <div>
+        <h3 class="diplay-4">Locate Us</h3>
+    </div>
+    <div id='map' style='width: 100%; height: 600px;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYWthc2gxNTEyIiwiYSI6ImNsOTVkYmVhMjJkMDMzb25uNWg3anB5eDMifQ.Z6M0EEL7tBTNxZ9XFNzaqQ';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [145.133957, -37.907803],
+            zoom:14
+        }); 
+        // Create a new marker.
+        const marker = new mapboxgl.Marker()
+            .setLngLat([145.133957, -37.907803])
+            .setPopup(new mapboxgl.Popup().setHTML("<h6>Pharmacity</h6>"))
+            .addTo(map);
+
+        marker.togglePopup(); // toggle popup open or closed
+
+    </script>
+
+
+</body>

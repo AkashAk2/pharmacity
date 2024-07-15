@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIT5032_Pharmacity", "FIT5032_Pharmacity.csproj", "{59270B78-2925-483D-B456-5A7A89803FB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59270B78-2925-483D-B456-5A7A89803FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59270B78-2925-483D-B456-5A7A89803FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59270B78-2925-483D-B456-5A7A89803FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59270B78-2925-483D-B456-5A7A89803FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1A3C8C8-0145-442C-B184-C4C66665A09B}
+	EndGlobalSection
+EndGlobal
